@@ -1,0 +1,155 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+.me{
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    width: 100%;
+}
+.jumo2{
+    margin-top: 45px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+}
+.pizza2{
+    background-color: green;
+}
+.pizza{
+    background-color: green;
+    
+}
+.t1{
+    height: 40px;
+    width:400px;
+}
+.three{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.love{
+    background-color: rgb(65, 228, 65);
+    height: 60px;
+    width: 500px;
+    border-radius: 10px;
+} */
+ /* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.me {
+    display: grid;
+    /* grid-template-rows: 1fr; */
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(invest.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ; */
+}
+
+.jumo2 {
+    margin-top: 45px;
+    background-color: green;
+    background-image: url(invest.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+    text-align: center; /* Center-align text for mobile */
+}
+
+.pizza, .pizza2 {
+    background-color: green;
+    color: white;
+}
+
+.t1 {
+    height: 40px;
+    width: 400px;
+}
+
+.three {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.love {
+    background-color: rgb(65, 228, 65);
+    height: 60px;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Center align */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .jumo2 {
+        grid-template-rows: 1fr; /* Stack rows vertically */
+        margin-top: 20px;
+    }
+
+    .pizza {
+        padding: 20px;
+    }
+
+    .t1 {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 350px;
+    }
+
+    .love {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Adjust font size for smaller screens */
+    .pizza b {
+        font-size: 28px;
+    }
+
+    .pizza p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .jumo2 {
+        padding: 20px;
+    }
+
+    .pizza b {
+        font-size: 24px;
+    }
+
+    .pizza p {
+        font-size: 18px;
+    }
+
+    .love {
+        width: 90%;
+        font-size: 24px;
+    }
+}

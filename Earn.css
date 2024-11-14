@@ -1,0 +1,178 @@
+/* /* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.me {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
+    
+}
+
+/* Header section */
+.mum1 {
+    background-color: white;
+    display: grid;
+     grid-template-columns: repeat(3, 1fr); 
+    
+}
+
+/* Header left side */
+.up1 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+/* Header right side */
+.up2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* List items */
+.lock {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Main content container */
+.mum2 {
+    /* background-color:green; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(in.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+}
+
+/* Left side of main content */
+.down1 {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(invest.webp);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center ;
+}
+
+/* Form and information box */
+.box {
+    background-color: white;
+    margin: 100px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+}
+.below{
+    padding-left: 50px;
+}
+
+/* Content inside .box */
+.b1 {
+    background-color: cadetblue;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Input sections */
+.log1, .log2 {
+    padding: 20px;
+}
+
+/* Hover effect for button */
+.b3:hover {
+    color: chartreuse;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+    /* Stack header and main sections vertically */
+    .me {
+        grid-template-rows: auto auto;
+    }
+
+    /* Make the header columns stack on smaller screens */
+    .mum1 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Center header text and remove padding */
+    .up1 {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    /* Stack columns in the main content area */
+    .mum2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust box margins and layout */
+    .box {
+        margin: 20px;
+    }
+
+    /* Stack form inputs in a single column */
+    .b2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For small screens (mobile) */
+@media (max-width: 480px) {
+    /* Adjust font sizes for readability */
+    .up1, .b1 {
+        font-size: 24px;
+    }
+
+    /* Scale down text for the main content */
+    .eye, .jump {
+        font-size: 24px;
+    }
+
+    .pump {
+        font-size: 20px;
+    }
+
+    /* Reduce margin for the box */
+    .box {
+        margin: 10px;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    /* Adjust button font size */
+    .b3 button {
+        font-size: 18px;
+    }
+
+    .below {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+}
